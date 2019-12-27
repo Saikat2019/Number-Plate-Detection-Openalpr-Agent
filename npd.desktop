@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Exec=/home/saikat/Desktop/npd.sh
+Name=NPD
+GenericName=Number Plate Detector
+Comment=Detect Number Plate from IP camera
+Encoding=UTF-8
+Terminal=true
+Icon=/home/saikat/.icons/NPD.jpeg
+Type=Application
+Categories=Application;Network;
