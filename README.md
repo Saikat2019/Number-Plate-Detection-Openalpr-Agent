@@ -17,7 +17,21 @@ We deployed our code in a Respberry Pi 4 (4GB RAM) with a standard IP Camera.
 - [License](#License)
 
 ## Installation
-First we need to install and sign in to Openalpr agent in our system. A detailed tutorial can be found here.[OpenALPR Agent Installation](http://doc.openalpr.com/on_premises.html#watchman-agent)
+First we need to install and sign in to Openalpr agent in our system. A detailed tutorial can be found [here](http://doc.openalpr.com/on_premises.html#watchman-agent).
+
+[OpenALPR Agent Installation](http://doc.openalpr.com/on_premises.html#installation). Click here for the installation process.http://doc.openalpr.com/on_premises.html#installation.
+
+After installation is completed, our agent need to be configured. First open OpenALPR agent by<b> ```$sudo alprdconfig```</b>
+
+Then go to <b>Configure -> Agent settings -> Advanced.</b>
+
+<pre>Now change the values of <b>- store_plate = 1
+                         - store_video = 1
+                         - store_video_maxsize_gb = 1
+                         - upload_data = 0
+                         - web_server_enabled = 1
+                         - websockets_enabled = 0</b></pre>
+<b>Now restart OpenALPR.</b>
 To test the program, first launch the OpenALPR Agent and then sign in and add the camera, then run the script to upload numbers into our server
 ```bash
 python3 openAlpr2db.py
